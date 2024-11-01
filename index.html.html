@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boris Aep's Profile</title> <!-- Site name updated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://your-font-url.com/lemonmilk-bold.woff2" rel="stylesheet"> <!-- Replace with actual URL -->
+    <style>
+        body {
+            font-family: 'LemonMilk', sans-serif; /* Change the font here */
+            background-image: url('file:///C:/Users/boris/Desktop/my%20own%20stuff%20for%20me%20to%20edit%20upon/Komp%201_00000.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            perspective: 1000px; /* Add perspective for 3D effect */
+            animation: fadeIn 1s ease-in;
+            transition: background-image 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            text-align: center;
+            background-image: url('file:///C:/path/to/your/image.jpg'); /* Change to your own background image */
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Increased shadow */
+            animation: slideIn 0.5s ease-out;
+            position: relative; /* Needed for pseudo-elements */
+            overflow: hidden; /* Prevent overflow of pseudo-elements */
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25)); /* Changed gradient overlay */
+            border-radius: 20px;
+            z-index: 1; /* Place behind content */
+            pointer-events: none; /* Ignore mouse events */
+        }
+        .container::after {
+            content: '';
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            right: 5%;
+            bottom: 5%;
+            border: 3px dashed #ff5722; /* Changed color and thickness of dashed border */
+            border-radius: 20px;
+            z-index: 0; /* Place behind content and gradient */
+            pointer-events: none; /* Ignore mouse events */
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px) rotateY(-10deg); opacity: 0; }
+            to { transform: translateY(0) rotateY(0deg); opacity: 1; }
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 40px 0 20px;
+            animation: pulse 3s infinite;
+            position: relative; /* Ensure the image stays on top of the pseudo-elements */
+            z-index: 2; /* Place above gradient */
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        h1 {
+            margin-bottom: 10px; /* Adjust margin for better spacing */
+            font-size: 2em;
+            color: #ff5722; /* Changed heading color */
+            transition: color 0.3s; /* Transition for heading color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D text shadow */
+            z-index: 2; /* Place above gradient */
+        }
+        p {
+            margin: 10px 0; /* Spacing around the bio */
+            font-size: 1.2em; /* Font size for the bio */
+            color: #333; /* Color for the bio */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 3D text shadow for bio */
+            z-index: 2; /* Place above gradient */
+        }
+        a {
+            display: flex;
+            align-items: center;
+            margin: 10px auto;
+            padding: 20px;
+            width: 300px;
+            background: linear-gradient(135deg, #007bff, #0056b3); /* Original link gradient */
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition for link */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Increased shadow for links */
+            position: relative; /* Ensure links are above decorations */
+            z-index: 2; /* Place above gradient */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 3D text shadow for links */
+        }
+        a:hover {
+            background: linear-gradient(135deg, #0056b3, #003f7f);
+            transform: translateY(-2px) scale(1.05); /* Scale up slightly on hover */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+        a i {
+            margin-right: 10px;
+            transition: transform 0.3s; /* Transition for icon */
+        }
+        a:hover i {
+            transform: scale(1.1); /* Scale the icon on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="file:///C:/Users/boris/Downloads/Telegram%20Desktop/photo_2024-11-01_12-09-45.jpg" alt="Profile Picture">
+        <h1>Boris.Aep</h1>
+        <p>Welcome to my profile!<br>I'm passionate about editing and sharing creative content.</p> <!-- Bio split into two rows -->
+        <a href="https://forms.clickup.com/9003097555/f/8ca0qek-9531/487T9RCS5WCWESBOGC?Referral=Bobi.Ae&mc_cid=8e31dbab28&mc_eid=3596a93da9" target="_blank"><i class="fas fa-file-alt"></i>Make Money from Your Edits</a>
+        <a href="https://payhip.com/BobiAe" target="_blank"><i class="fas fa-shopping-cart"></i>Payhip Store</a>
+        <a href="https://www.tiktok.com/@bobi.ae?_t=8r0z1hlivpy&_r=1" target="_blank"><i class="fab fa-tiktok"></i>TikTok Profile</a>
+        <a href="https://www.youtube.com/@bobi.ae1?si=bN1QMfcjs606uZSX" target="_blank"><i class="fab fa-youtube"></i>YouTube Channel</a>
+        <a href="https://www.instagram.com/borisaep_/?igsh=a2l5ZXQwM3czbzQ1" target="_blank"><i class="fab fa-instagram"></i>Instagram Profile</a>
+    </div>
+
+    <script>
+        document.getElementById('bgInput').addEventListener('change', setBackground);
+
+        function setBackground() {
+            const bgInput = document.getElementById('bgInput').value;
+            document.body.style.backgroundImage = `url(${bgInput})`;
+        }
+    </script>
+</body>
+</html>
